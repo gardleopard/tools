@@ -1,7 +1,17 @@
-{{uploaded}}
-<form name="file" method="post" enctype="multipart/form-data"  action="/upload">
- <table>
- 	<tr><td><input type="file" name="file"></td></tr>
- 	<tr><td><input name="Upload" type="submit" value="Upload file"></td></tr>
- </table>	
- </form>
+<div class="row">
+  <div class="span12">
+    <h2>Upload files to the server</h2>
+    <div class="row">
+      <form name="file" method="post" enctype="multipart/form-data"  action="/upload">
+        <div class="span6">
+ 	  <input type="file" name="file">
+        </div>
+        <div class="span6">
+ 	  <input name="Upload" type="submit" value="Upload file">
+          <br/>
+          <p>{{uploaded}}</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
